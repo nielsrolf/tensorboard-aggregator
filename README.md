@@ -15,10 +15,7 @@ There is a similar tool which uses pytorch to output the tensorboard summary: [T
 
 ## Setup and run configuration
 
-1. Download or clone repository files to your computer
-1. Go into repository folder
-1. Install requirements: `pip3 install -r requirements.txt --upgrade`
-1. You can now run the aggregation with: `python aggregator.py`
+`pip install git+git://github.com/nielsrolf/tensorboard-aggregator`
 
 ### Parameters
 
@@ -28,14 +25,6 @@ There is a similar tool which uses pytorch to output the tensorboard summary: [T
 | _--subpaths_ | optional | `['.']`       | List of all subpaths |
 | _--output_   | optional | `summary`                 | Possible values: `summary`, `csv` |
 
-### Recommendation
-
-- Add the repository folder to the PATH (global environment variables).
-- Create an additional script file within the repository folder containing `python static/path/to/aggregator.py` 
-    - Script name: `aggregate.sh` / `aggregate.bat` / ... (depending on your OS)
-    - Change default behavior via parameters
-    - Do not change `path` parameter since this will by default be the path the script is run from
-- Workflow from here: Open folder with tensorboard files and call the script: aggregate files will be created for the current directory
 
 ## Explanation
 
